@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #222324;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menu{
+    position: absolute;
+    left: -30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5a5a5a;
+    width: 20%;
+    height: 100%;
+    transition: 0.5s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.menu h1{
+    position: relative;
+    right: -200px;
+    top: -320px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #b6b6b6;
+    font-size: 30px;
+    transition: 0.5s;
+    margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.menu h1:hover{
+    color: #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #b6b6b6;
+    font-size: 30px;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.button-toggle{
+    cursor: pointer;
+    width: 40px;
+    height: 8px;
+    background-color: #000000;
+    margin-bottom: 3px;
+
+}
+
+.active{
+    display: absolute;
+    left: 0;
 }
